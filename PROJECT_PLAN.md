@@ -79,7 +79,7 @@
 |------------|--------------|-----
 | Alba | - Created the project plan and assigned tasks to the team <br> - Wrote the README <br> - Created GitHub issues <br> - Researched and wrote the Task Estimation section <br> - Co-authored the CI/CD section | Antoine, Diana |
 | Diana | - Researched and wrote Code Reviews section <br> - Co-authored the Task Estimation section | Alba, Antoine |
-| Antoine | | Alba, Diana |
+| Antoine | - Created the GitHub repository and invited collaborators <br> - Researched and wrote the CI/CD section <br> - Co-authored the Code Reviews section | Alba, Diana |
 
 ---
 
