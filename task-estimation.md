@@ -6,23 +6,13 @@
 
 ## Why Estimation Matters
 
-Poor estimates are one of the most common reasons projects fail. A team might start a sprint confidently, then discover midway through that a single task takes as long as the entire sprint was planned for. This has happened in real projects: in one case involving AI-driven NPCs for a video game, the AI component was left too late. By the deadline, the NPCs barely worked. The task had been underestimated, work started late, and there was no time to recover.
-
-In a startup with 20 engineers, this kind of delay can lead to missed releases, rushed features, and bugs reaching production. Scrum uses estimation to help teams plan sprints, communicate with stakeholders, and learn from past work. However, when done poorly, estimation creates false confidence and pressure that actually makes outcomes *worse*.
-
----
-
-## How to Think About Estimation: Hours vs. Story Points
-
-In practice, teams that estimate in hours quickly find that those hours become deadlines. A developer says "two days", and two weeks later a manager is asking why it took four. Story points were meant to avoid this — but they create their own problems. Without a shared reference for what a "5" actually means on your team, the scale drifts over time and people end up speaking different languages in the same planning session.
-
-The pattern that tends to work is estimating in **relative complexity** while sanity-checking against rough hours. If no one can explain why a task would take longer than a similar one, the estimate is not grounded in anything real.
+Poor estimates are one of the most common reasons projects fail. In one real project involving AI-driven NPCs for a video game, the AI component was left too late — by the deadline, the NPCs barely worked. The task had been underestimated, work started late, and there was no time to recover. In a startup with 20 engineers, this kind of delay leads to missed releases, rushed features, and bugs in production. When done poorly, estimation creates false confidence and pressure that makes outcomes *worse*.
 
 ---
 
 ## Why Estimates Go Wrong
 
-Estimation fails for many reasons, but most of them follow a pattern: teams underestimate early, then face pressure when reality turns out to be harder than expected. The diagram below summarises the most common structural reasons behind this.
+The diagram below summarises the most common structural reasons behind this.
 
 ![Summary of reasons why planning-based estimation fails](images/planning-based-estimation-doesn't-work.png)
 *Source: Urs Enzler, Planet Geek (2024) — [(Mis)estimation – why estimates tend to be wrong](https://www.planetgeek.ch/2024/02/07/misestimation-why-estimation-does-not-work/)*
@@ -44,10 +34,6 @@ A particularly clear illustration of the gap between plans and reality is the fo
 
 ## The Estimation Process in Practice
 
-Teams often know what good estimation looks like in theory, but the process breaks down in predictable ways. Stakeholders push for faster answers, estimates get locked in before the work is understood, and no one revisits them when reality changes. The result is a sprint plan that is outdated before it even starts.
-
-Story points are meant to measure relative complexity, but in practice they frequently get misused. The infographic below shows the most common ways this happens in real teams.
-
 ![Limitations of story points in software development](images/limitations%20of%20story%20points%20in%20software%20development.webp)
 *Source: Alexandre Walsh, Axify — [Why Story Points Don't Matter and What to Use Instead](https://axify.io/blog/story-points)*
 
@@ -55,13 +41,11 @@ Story points are meant to measure relative complexity, but in practice they freq
 
 ## Good Practices to Follow
 
-- **Estimate as a team, at the same time.** When one person dominates or estimates alone, the result reflects one opinion, not the team's collective understanding. Disagreement between team members is often where the most valuable discussion happens.
-- **Use reference stories.** Green (Humanizing Work) found that without concrete examples anchoring the scale, point values drift and lose meaning — teams end up comparing tasks to nothing [(Green, Humanizing Work)](https://www.humanizingwork.com/how-to-fix-story-point-estimation/).
-- **Break down anything that feels uncertain.** If a task cannot be estimated with confidence, it is too big or too vague. Splitting it forces the team to confront assumptions early rather than mid-sprint.
-- **Check estimates against rough hours.** Even when using story points, ask: "does this feel like half a day or three days?" Vague estimates that cannot be loosely mapped to time are usually not grounded in reality.
-- **Update estimates when you learn something new.** An estimate reflects what the team knew at one point in time. When that changes, the estimate should too — silently hoping to catch up is how sprints collapse.
-- **Run a quick pre-mortem.** Before committing to a sprint, ask: "if this goes wrong, what is the most likely reason?" It surfaces hidden risks before they become emergencies.
-- **Review actual results in retrospectives.** If estimates are consistently wrong in the same direction, that is a process problem, not bad luck. The only way to improve is to look at the data honestly.
+- **Prefer relative complexity over hours.** Hours become deadlines. Story points avoid false precision — but only if the team uses reference stories to anchor the scale.
+- **Estimate as a team, at the same time.** When one person dominates, the result reflects one opinion. Disagreement is often where the most valuable discussion happens.
+- **Break down anything that feels uncertain.** If a task cannot be estimated with confidence, it is too big or too vague.
+- **Update estimates when scope changes.** Silently hoping to catch up is how sprints collapse.
+- **Review actual results in retrospectives.** Consistent estimation errors in the same direction are a process problem, not bad luck.
 
 ---
 
@@ -77,7 +61,7 @@ Story points are meant to measure relative complexity, but in practice they freq
 | Treat estimates as forecasts | Treat estimates as deadlines or commitments |
 | Revise estimates when scope changes | Hold people to estimates after requirements change |
 
-> **Common failure mode:** management treats estimates as promises. This causes engineers to pad numbers defensively, which then get treated as even bigger promises. Be transparent with stakeholders: estimates are forecasts, not contracts.
+> **Common failure mode:** management treats estimates as promises, so engineers pad numbers defensively. Be transparent: estimates are forecasts, not contracts.
 
 ---
 
@@ -86,10 +70,8 @@ Story points are meant to measure relative complexity, but in practice they freq
 After reviewing the five references, several themes came up consistently — not as theory, but as things practitioners had experienced and struggled with:
 
 - **Estimates always become deadlines, unless you actively prevent it.** Every source describes the same pattern: a rough estimate gets repeated up the chain and arrives at the client as a commitment. Engineers then feel accountable for a number that was never meant to be precise.
-- **The psychological pressures are harder to fix than the process.** Optimism, anchoring, and fear of looking slow distort estimates even in teams with good intentions and solid methodology. Multiple sources point out that awareness alone is not enough — the environment has to make honest estimation safe.
-- **Story points solve one problem and create another.** They remove the false precision of hours, but invite gaming when velocity becomes a target. Several authors argue the metric is only useful when the team genuinely does not care about the number itself.
-- **Individual estimation is almost always worse.** When one person — especially someone senior — gives a number first, the rest of the team rarely challenges it. The estimate reflects authority, not reality.
-- **Looking back is the only way to get better.** Every source that discusses improvement points to retrospectives and comparing estimates to actuals. Teams that skip this step have no signal for whether they are getting better or just repeating the same patterns.
+- **The psychological pressures are harder to fix than the process.** Optimism, anchoring, and fear of looking slow distort estimates even in teams with good intentions. Multiple sources point out that awareness alone is not enough — the environment has to make honest estimation safe.
+- **Looking back is the only way to get better.** Every source that discusses improvement points to retrospectives and comparing estimates to actuals. Teams that skip this step have no signal for whether they are improving or just repeating the same patterns.
 
 ---
 
@@ -103,14 +85,6 @@ Use this template during sprint planning sessions:
 4. **Risk factors**: What could make this take longer?
 5. **Dependencies**: Does this task block or depend on others?
 6. **Confidence level**: High / Medium / Low
-
-Example:
-- **Task**: Implement user authentication for mobile app
-- **Reference**: Similar authentication feature for web app was a 5-pointer
-- **Duration**: 2-3 days
-- **Risks**: Third-party API integration complexity, testing across devices
-- **Dependencies**: Requires API endpoint from backend team
-- **Confidence**: Medium (waiting on API spec clarification)
 
 ---
 
