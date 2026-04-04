@@ -68,7 +68,6 @@
 
 | Task | Owner | Branch |
 |------|-------|--------|
-| Standardise formatting across all sections | Antoine | `polish` |
 | Write Retrospective + contributions table | All | `retrospective` |
 
 ---
