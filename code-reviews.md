@@ -165,6 +165,26 @@ Code is ready to merge only when:
 
 ---
 
+## Common Mistakes to Avoid
+
+### Reviewers Should Avoid
+
+- **Being dismissive**: Avoid comments like "this is wrong" without explanation
+- **Bikeshedding**: Don't focus heavily on minor style preferences over substance
+- **Blocking on preferences**: Use "SHOULD" language for optional improvements
+- **Long feedback sessions**: If feedback is extensive, suggest a call
+- **Reviewing while tired**: Your review quality matters
+
+### Authors Should Avoid
+
+- **Responding defensively**: Take feedback as help, not criticism
+- **Submitting large PRs**: Make reviewers' job harder
+- **Ignoring feedback**: Even if you disagree, engage with the reviewer
+- **Force-pushing without explanation**: Communicate changes to your reviewers
+- **Merging with unresolved comments**: Address all feedback before merging
+
+---
+
 ## References
 
 1. **Google Engineering Practices**: Code Review
