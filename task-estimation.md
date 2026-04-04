@@ -93,6 +93,27 @@ After reviewing the five references, several themes came up consistently — not
 
 ---
 
+## Quick Reference: Estimation Template
+
+Use this template during sprint planning sessions:
+
+1. **Task name and description**: Clear, specific, and refined
+2. **Relative complexity**: Compared to similar past tasks (reference story)
+3. **Rough duration estimate**: "Half a day", "2-3 days", "uncertain - needs spike"
+4. **Risk factors**: What could make this take longer?
+5. **Dependencies**: Does this task block or depend on others?
+6. **Confidence level**: High / Medium / Low
+
+Example:
+- **Task**: Implement user authentication for mobile app
+- **Reference**: Similar authentication feature for web app was a 5-pointer
+- **Duration**: 2-3 days
+- **Risks**: Third-party API integration complexity, testing across devices
+- **Dependencies**: Requires API endpoint from backend team
+- **Confidence**: Medium (waiting on API spec clarification)
+
+---
+
 ## References
 
 1. [Why software development estimates are so often wrong](https://engineering.deptagency.com/why-software-development-estimates-are-so-often-wrong) by Matt Daigle, DEPT Agency
@@ -100,3 +121,4 @@ After reviewing the five references, several themes came up consistently — not
 3. [Cognitive Biases That Ruin Sprint Planning and How To Avoid Them](https://agileseekers.com/blog/cognitive-biases-that-ruin-sprint-planning-and-how-to-avoid-them) by Agile Seekers
 4. [Why Story Points Don't Matter and What to Use Instead](https://axify.io/blog/story-points) by Alexandre Walsh, Axify
 5. [(Mis)estimation – why estimates tend to be wrong](https://www.planetgeek.ch/2024/02/07/misestimation-why-estimation-does-not-work/) by Urs Enzler, Planet Geek
+
