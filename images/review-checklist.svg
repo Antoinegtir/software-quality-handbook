@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <!-- Title -->
+  <text x="350" y="25" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">What Reviewers Should Look For</text>
+  
+  <!-- Design -->
+  <circle cx="100" cy="120" r="45" fill="#4CAF50" stroke="#333" stroke-width="2"/>
+  <text x="100" y="115" font-size="11" font-weight="bold" text-anchor="middle" fill="white">DESIGN</text>
+  <text x="100" y="130" font-size="11" text-anchor="middle" fill="white">Well-architected?</text>
+  
+  <!-- Functionality -->
+  <circle cx="250" cy="120" r="45" fill="#2196F3" stroke="#333" stroke-width="2"/>
+  <text x="250" y="115" font-size="11" font-weight="bold" text-anchor="middle" fill="white">FUNCTIONALITY</text>
+  <text x="250" y="130" font-size="11" text-anchor="middle" fill="white">Does it work?</text>
+  
+  <!-- Complexity -->
+  <circle cx="400" cy="120" r="45" fill="#FF9800" stroke="#333" stroke-width="2"/>
+  <text x="400" y="115" font-size="11" font-weight="bold" text-anchor="middle" fill="white">COMPLEXITY</text>
+  <text x="400" y="130" font-size="11" text-anchor="middle" fill="white">Too complex?</text>
+  
+  <!-- Tests -->
+  <circle cx="550" cy="120" r="45" fill="#9C27B0" stroke="#333" stroke-width="2"/>
+  <text x="550" y="115" font-size="11" font-weight="bold" text-anchor="middle" fill="white">TESTS</text>
+  <text x="550" y="130" font-size="11" text-anchor="middle" fill="white">Well tested?</text>
+  
+  <!-- Naming -->
+  <circle cx="100" cy="270" r="45" fill="#E91E63" stroke="#333" stroke-width="2"/>
+  <text x="100" y="265" font-size="11" font-weight="bold" text-anchor="middle" fill="white">NAMING</text>
+  <text x="100" y="280" font-size="11" text-anchor="middle" fill="white">Clear names?</text>
+  
+  <!-- Comments -->
+  <circle cx="250" cy="270" r="45" fill="#00BCD4" stroke="#333" stroke-width="2"/>
+  <text x="250" y="265" font-size="11" font-weight="bold" text-anchor="middle" fill="white">COMMENTS</text>
+  <text x="250" y="280" font-size="11" text-anchor="middle" fill="white">Helpful?</text>
+  
+  <!-- Style -->
+  <circle cx="400" cy="270" r="45" fill="#3F51B5" stroke="#333" stroke-width="2"/>
+  <text x="400" y="265" font-size="11" font-weight="bold" text-anchor="middle" fill="white">STYLE</text>
+  <text x="400" y="280" font-size="11" text-anchor="middle" fill="white">Consistent?</text>
+  
+  <!-- Documentation -->
+  <circle cx="550" cy="270" r="45" fill="#00897B" stroke="#333" stroke-width="2"/>
+  <text x="550" y="265" font-size="11" font-weight="bold" text-anchor="middle" fill="white">DOCUMENTATION</text>
+  <text x="550" y="280" font-size="11" text-anchor="middle" fill="white">Updated?</text>
+  
+  <!-- Central text -->
+  <text x="350" y="200" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">8 Key Areas</text>
+  
+  <!-- Bottom note -->
+  <text x="350" y="360" font-size="12" text-anchor="middle" fill="#666">Review all areas to ensure consistent code quality and maintainability</text>
+  <text x="350" y="380" font-size="12" text-anchor="middle" fill="#666">Focus on substance over style preferences</text>
+</svg>

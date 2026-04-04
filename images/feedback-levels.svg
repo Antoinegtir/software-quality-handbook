@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <!-- Title -->
+  <text x="350" y="30" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Feedback Priority Levels</text>
+  
+  <!-- MUST FIX -->
+  <rect x="30" y="70" width="140" height="100" rx="8" fill="#F44336" stroke="#333" stroke-width="2"/>
+  <text x="100" y="95" font-size="16" font-weight="bold" text-anchor="middle" fill="white">MUST FIX</text>
+  <line x1="50" y1="105" x2="150" y2="105" stroke="white" stroke-width="1"/>
+  <text x="100" y="125" font-size="11" text-anchor="middle" fill="white">Bugs</text>
+  <text x="100" y="140" font-size="11" text-anchor="middle" fill="white">Security Issues</text>
+  <text x="100" y="155" font-size="11" text-anchor="middle" fill="white">Architecture Problems</text>
+  
+  <!-- SHOULD FIX -->
+  <rect x="215" y="70" width="140" height="100" rx="8" fill="#FF9800" stroke="#333" stroke-width="2"/>
+  <text x="285" y="95" font-size="16" font-weight="bold" text-anchor="middle" fill="white">SHOULD FIX</text>
+  <line x1="235" y1="105" x2="335" y2="105" stroke="white" stroke-width="1"/>
+  <text x="285" y="125" font-size="11" text-anchor="middle" fill="white">Performance</text>
+  <text x="285" y="140" font-size="11" text-anchor="middle" fill="white">Readability</text>
+  <text x="285" y="155" font-size="11" text-anchor="middle" fill="white">Maintainability</text>
+  
+  <!-- NICE TO HAVE -->
+  <rect x="400" y="70" width="140" height="100" rx="8" fill="#4CAF50" stroke="#333" stroke-width="2"/>
+  <text x="470" y="95" font-size="16" font-weight="bold" text-anchor="middle" fill="white">NICE TO HAVE</text>
+  <line x1="420" y1="105" x2="520" y2="105" stroke="white" stroke-width="1"/>
+  <text x="470" y="125" font-size="11" text-anchor="middle" fill="white">Learning</text>
+  <text x="470" y="140" font-size="11" text-anchor="middle" fill="white">Suggestions</text>
+  <text x="470" y="155" font-size="11" text-anchor="middle" fill="white">Future Ideas</text>
+  
+  <!-- APPROVED -->
+  <rect x="585" y="70" width="100" height="100" rx="8" fill="#2196F3" stroke="#333" stroke-width="2"/>
+  <text x="635" y="120" font-size="16" font-weight="bold" text-anchor="middle" fill="white">✓</text>
+  <text x="635" y="145" font-size="12" font-weight="bold" text-anchor="middle" fill="white">APPROVED</text>
+  <text x="635" y="160" font-size="11" text-anchor="middle" fill="white">Ready to</text>
+  <text x="635" y="173" font-size="11" text-anchor="middle" fill="white">Merge</text>
+  
+  <!-- Blocking vs Non-Blocking -->
+  <g>
+    <text x="60" y="210" font-size="14" font-weight="bold" fill="#333">Blocking Reviews</text>
+    <rect x="30" y="220" width="270" height="60" rx="5" fill="#ffebee" stroke="#F44336" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="40" y="240" font-size="11" fill="#333">• Must be resolved before merge</text>
+    <text x="40" y="257" font-size="11" fill="#333">• Focus on MUST FIX issues</text>
+    <text x="40" y="274" font-size="11" fill="#333">• Use clear, specific language</text>
+  </g>
+  
+  <!-- Non-Blocking Reviews -->
+  <g>
+    <text x="380" y="210" font-size="14" font-weight="bold" fill="#333">Optional Improvements</text>
+    <rect x="350" y="220" width="305" height="60" rx="5" fill="#f3e5f5" stroke="#9C27B0" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="360" y="240" font-size="11" fill="#333">• Use "could" or "consider" language</text>
+    <text x="360" y="257" font-size="11" fill="#333">• Allow author to decide implementation</text>
+    <text x="360" y="274" font-size="11" fill="#333">• Good for learning opportunities</text>
+  </g>
+  
+  <!-- Bottom reminder -->
+  <text x="350" y="320" font-size="12" text-anchor="middle" fill="#666" font-style="italic">Being clear about priority helps maintain good relationships and efficient reviews</text>
+</svg>
