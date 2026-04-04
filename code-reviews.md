@@ -144,6 +144,27 @@ Code is ready to merge only when:
 
 ---
 
+### Code Review Checklist
+
+**For Reviewers:**
+- [ ] Code is understandable and maintainable
+- [ ] Tests exist and are comprehensive
+- [ ] No obvious bugs or logical errors
+- [ ] Performance is acceptable
+- [ ] Security considerations are addressed
+- [ ] Code follows our conventions
+- [ ] Documentation is up to date
+
+**For Authors:**
+- [ ] PR description is clear and complete
+- [ ] All tests pass locally and in CI
+- [ ] Code follows the style guide
+- [ ] No unnecessary changes included
+- [ ] Commit messages are clear
+- [ ] Related documentation is updated
+
+---
+
 ## References
 
 1. **Google Engineering Practices**: Code Review
