@@ -103,4 +103,7 @@ _To be filled in_
 > _To be filled in_
 
 **Antoine:**
-> _To be filled in_
+
+The project went well, we encounter no difficulties at all when it comes to use github to organize our group project.
+The challenging part was most likely to select the best sources on internet to answer each topics.
+Next time I would start peer reviews sooner.
