@@ -142,45 +142,6 @@ Code is ready to merge only when:
 
 ![Reviewer vs Author Workflow](./images/reviewer-author-workflow.svg)
 
-### Code Review Checklist
-
-**For Reviewers:**
-- [ ] Code is understandable and maintainable
-- [ ] Tests exist and are comprehensive
-- [ ] No obvious bugs or logical errors
-- [ ] Performance is acceptable
-- [ ] Security considerations are addressed
-- [ ] Code follows our conventions
-- [ ] Documentation is up to date
-
-**For Authors:**
-- [ ] PR description is clear and complete
-- [ ] All tests pass locally and in CI
-- [ ] Code follows the style guide
-- [ ] No unnecessary changes included
-- [ ] Commit messages are clear
-- [ ] Related documentation is updated
-
----
-
-## Common Mistakes to Avoid
-
-### Reviewers Should Avoid
-
-- **Being dismissive**: Avoid comments like "this is wrong" without explanation
-- **Bikeshedding**: Don't focus heavily on minor style preferences over substance
-- **Blocking on preferences**: Use "SHOULD" language for optional improvements
-- **Long feedback sessions**: If feedback is extensive, suggest a call
-- **Reviewing while tired**: Your review quality matters
-
-### Authors Should Avoid
-
-- **Responding defensively**: Take feedback as help, not criticism
-- **Submitting large PRs**: Make reviewers' job harder
-- **Ignoring feedback**: Even if you disagree, engage with the reviewer
-- **Force-pushing without explanation**: Communicate changes to your reviewers
-- **Merging with unresolved comments**: Address all feedback before merging
-
 ---
 
 ## References
