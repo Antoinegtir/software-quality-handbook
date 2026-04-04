@@ -4,23 +4,7 @@
 
 ## Purpose
 
-Code reviews are a critical part of our development process. They help us maintain code quality, share knowledge across the team, and catch bugs before they reach production. This guide provides practical advice for both reviewers and authors to make code reviews effective and constructive.
-
-## Table of Contents
-
-1. [For Reviewers](#for-reviewers)
-2. [For Authors](#for-authors)
-3. [Best Practices & Common Mistakes](#best-practices--common-mistakes)
-4. [Common Themes](#common-themes-across-sources)
-5. [References](#references)
-
----
-
-## Process Overview
-
-![Code Review Process](./images/code-review-process.svg)
-
-The code review process follows our trunk-based development model. Every change goes through review before merging to main.
+Code reviews maintain quality and prevent knowledge silos. Every change requires at least one review before merging to main.
 
 ---
 
@@ -32,75 +16,51 @@ As a reviewer, your job is to ensure that code being merged meets our quality st
 
 ### What to Look For
 
-When reviewing code, evaluate the following aspects:
+- **Design & Complexity**: Well-architected and understandable?
+- **Functionality & Tests**: Works correctly? Tests comprehensive?
+- **Naming & Style**: Clear names and conventions followed?
+- **Documentation**: Updated if needed?
 
-- **Design**: Is the code well-designed and appropriate for our system? Does it follow established patterns?
-- **Functionality**: Does the code do what the author intended? Will it work correctly for its users?
-- **Complexity**: Could the code be simpler? Will another developer understand it easily in the future?
-- **Tests**: Are there adequate automated tests? Are they well-designed and comprehensive?
-- **Naming**: Are variable, class, and function names clear and descriptive?
-- **Comments**: Are comments clear, helpful, and non-obvious?
-- **Style**: Does the code follow our style guides and conventions?
-- **Documentation**: Has the developer updated relevant documentation?
+### Who Should Review
 
-![What Reviewers Should Look For](./images/review-checklist.svg)
-
-### Picking the Best Reviewer
-
-- The best reviewers are those most familiar with the code being changed
-- Assign reviews to CODEOWNERS when possible
-- For complex changes, consider having multiple reviewers
-- If the ideal reviewer is unavailable, request them as a secondary reviewer
+Best reviewers know the code well. Assign to CODEOWNERS. For complex changes, get multiple reviewers.
 
 ### Review Etiquette
 
-- **Be respectful and constructive**: Review the code, not the person
-- **Ask questions**: Use questions to help the author think through their solution
-- **Acknowledge good work**: Compliment clever solutions and good practices
-- **Respond in a timely manner**: Review PRs within 24 hours when possible
-- **Be specific**: Point to exact lines and explain why changes are needed
-- **Prioritize critical issues**: Flag blocking issues vs. optional improvements
-- **Assume good intent**: The author is trying to improve the codebase
+- Review code, not character
+- Ask questions to encourage reflection
+- Be specific—point to exact lines
+- Respond within 24 hours
+- Flag blocking issues separately
 
-### Levels of Feedback
+### Feedback Levels
 
-- **MUST FIX**: Critical issues that must be resolved before merge (bugs, security issues, architectural problems)
-- **SHOULD FIX**: Important improvements that would benefit the code (performance, readability, maintainability)
-- **NICE TO HAVE**: Suggestions for future improvements or learning opportunities
-- **APPROVED**: No blocking issues; code is ready to merge
-
-![Feedback Priority Levels](./images/feedback-levels.svg)
+- **MUST FIX**: Bugs, security issues, architectural problems
+- **SHOULD FIX**: Performance, readability, maintainability improvements
+- **NICE TO HAVE**: Learning suggestions
+- **APPROVED**: Ready to merge
 
 ---
 
 ## For Authors
 
-### Preparing Your Code for Review
+### Before Requesting Review
 
-- **Keep PRs small**: Aim for PRs that can be reviewed in under 30 minutes
-- **Write a clear description**: Explain what changed and why
-- **Test thoroughly**: Ensure your code passes tests before requesting review
-- **Self-review first**: Review your own code before submitting for review
-- **Follow the style guide**: Consistency makes reviews faster
-- **Add comments for complex logic**: Help reviewers understand non-obvious decisions
+- Keep PRs small (reviewable in 30 minutes)
+- Write clear PR description
+- Self-review first
+- Tests pass locally
 
 ### Responding to Feedback
 
-- **Don't take it personally**: Feedback is about the code, not you
-- **Ask for clarification**: If feedback is unclear, ask questions
-- **Explain your reasoning**: If you disagree, explain why in a respectful way
-- **Fix issues promptly**: Address feedback quickly to keep momentum
-- **Resolve conversations**: Mark conversations as resolved only after addressing feedback
-- **Thank reviewers**: Acknowledge the time they spent on your code
+- Ask for clarification if needed
+- Explain your reasoning if you disagree
+- Address feedback quickly
+- Thank reviewers
 
-### Requesting Review & Handling Disagreements
+### Handling Disagreements
 
-- Tag reviewers explicitly when requesting review
-- Provide context if this is a follow-up to a previous discussion
-- Focus on facts, not opinions
-- Reference your style guide or architecture decisions when disagreeing
-- If stuck, bring in a third party or tech lead
-- Default to the author's preference if the issue is subjective and not harmful
+Focus on facts. Reference style guides or architecture decisions. If stuck, involve a tech lead.
 
 ---
 
@@ -108,38 +68,25 @@ When reviewing code, evaluate the following aspects:
 
 ### Key Principles
 
-1. **Be respectful and constructive**: Review code, not character
-2. **Keep it fast**: Aim for 24-hour turnaround on initial reviews
-3. **Be specific**: Point to exact lines and explain the why
-4. **Use the right tone**: "Could this be simpler?" is better than "This is bad"
-5. **Acknowledge good work**: Highlight clever solutions and good practices
-6. **Celebrate learning**: Code reviews help the whole team improve
+- Review code, not character
+- Target 24-hour turnaround
+- Be specific and constructive
+- Use positive tone
 
-### Reviewers: What to Avoid
+### What to Avoid
 
-- Being dismissive without explanation
-- Focusing heavily on minor style preferences
-- Blocking on subjective preferences (use "SHOULD" language for optional feedback)
-- Reviewing when tired—your quality matters
+**Reviewers**: Dismissiveness, style focus, blocking on preferences
 
-### Authors: What to Avoid
-
-- Submitting large, hard-to-review PRs
-- Responding defensively to feedback
-- Ignoring feedback even if you disagree
-- Merging with unresolved comments
+**Authors**: Large PRs, defensive responses, merging with unresolved comments
 
 ---
 
 ## Common Themes Across Sources
 
-After reviewing practitioner experiences and industry research, several patterns emerge consistently:
-
-- **Code reviews prevent knowledge silos but fail when tone is wrong.** The most common failure is not reviewing too little or too much, but reviewing in a way that feels personal rather than professional. When feedback feels like criticism of the person instead of the code, developers become defensive and stop listening.
-- **Speed matters more than perfection.** Multiple practitioners report that a review completed in 24 hours and merged quickly teaches more than a perfect review delivered a week later. Context switches and waiting kill momentum and the learning opportunity.
-- **Specific feedback beats vague feedback every time.** "This function is too complex" creates defensiveness. "This function would be easier to test if we extracted the validation logic" creates agreement and actual improvement.
-- **The hardest part is cultural, not technical.** Teams that struggle with code reviews rarely lack process—they lack psychological safety. Engineers pad estimates to avoid code review delays. Reviewers soften feedback to avoid conflict. The tooling and templates matter far less than whether people feel safe being honest.
-- **Consistency in standards prevents endless debates.** Teams that reference a shared style guide, architecture document, or past decisions spend far less time arguing about subjective preferences and far more time catching actual bugs.
+- **Tone matters more than process.** Reviews fail when feedback feels personal. Developers become defensive and stop listening.
+- **Speed beats perfection.** A 24-hour review teaches more than a perfect review a week later. Momentum matters.
+- **Be specific.** "Too complex" creates defensiveness. "Extract this logic into a helper" creates agreement.
+- **Culture beats tooling.** Teams struggle from lack of psychological safety, not templates. Consistency prevents endless debates.
 
 ---
 
