@@ -86,13 +86,13 @@
 ## Retrospective
 
 ### What went well?
-_To be filled in_
+Team collaboration worked well throughout the project, the tasks were distributed, GitHub was used well, and the PR feedback process improved the quality of each section before final submission.
 
 ### What was challenging?
-_To be filled in_
+The main challenge was timeline management and source selection. Some work moved later than planned which concentrated effort in the final days, and finding high-quality sources for each topic took more time than expected.
 
 ### What would we do differently next time?
-_To be filled in_
+Next time we would set more realistic deadlines with built-in buffer. Start writing and review cycles earlier, and agree on source quality criteria at the start to reduce late rework.
 
 ### Individual reflections
 
