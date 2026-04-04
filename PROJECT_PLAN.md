@@ -97,7 +97,7 @@ _To be filled in_
 ### Individual reflections
 
 **Alba:**
-> _To be filled in_
+> I was too optimistic when setting the deadlines in the project plan. I assumed the team would be able to work to the schedule I proposed, but in practice it was very hard to stick to. Most of the work came together in the final days. Next time I would set more realistic timelines and build in buffer, rather than planning for an ideal scenario where everyone delivers on time. That said, the PR review process worked well. Feedback was taken on board and acted on, which meant the content improved noticeably between versions. Despite the tight timeline, the work came together in the end.
 
 **Diana:**
 > _To be filled in_
