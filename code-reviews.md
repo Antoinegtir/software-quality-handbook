@@ -1,5 +1,7 @@
 # How to Give and Receive Effective Code Reviews
 
+> **TL;DR:** Code reviews improve quality and prevent knowledge silos, but only when done well. Be constructive, not critical. Focus feedback on substance, not preference. Keep reviews fast (24-48 hours). The goal is to help the author improve, not to prove you're smarter.
+
 ## Purpose
 
 Code reviews are a critical part of our development process. They help us maintain code quality, share knowledge across the team, and catch bugs before they reach production. This guide provides practical advice for both reviewers and authors to make code reviews effective and constructive.
@@ -8,10 +10,9 @@ Code reviews are a critical part of our development process. They help us mainta
 
 1. [For Reviewers](#for-reviewers)
 2. [For Authors](#for-authors)
-3. [Code Review Standards](#code-review-standards)
-4. [Best Practices](#best-practices)
-5. [Common Mistakes to Avoid](#common-mistakes-to-avoid)
-6. [References](#references)
+3. [Best Practices & Common Mistakes](#best-practices--common-mistakes)
+4. [Common Themes](#common-themes-across-sources)
+5. [References](#references)
 
 ---
 
@@ -92,120 +93,69 @@ When reviewing code, evaluate the following aspects:
 - **Resolve conversations**: Mark conversations as resolved only after addressing feedback
 - **Thank reviewers**: Acknowledge the time they spent on your code
 
-### Requesting Review from Specific People
+### Requesting Review & Handling Disagreements
 
 - Tag reviewers explicitly when requesting review
-- Mention @mentions for people you'd specifically like to review parts of your code
 - Provide context if this is a follow-up to a previous discussion
-
----
-
-## Code Review Standards
-
-### Definition of Done
-
-Code is ready to merge only when:
-
-1. ✓ All automated tests pass
-2. ✓ At least one teammate has approved the PR
-3. ✓ All feedback has been addressed
-4. ✓ Code follows our style guide
-5. ✓ Documentation is updated if needed
-
-### Review Turnaround Time
-
-- **First review**: Within 24 hours of PR submission
-- **Follow-up reviews**: Within 12 hours of author response to feedback
-- **Blocking reviews**: Address urgent PRs immediately
-
-### Handling Disagreements
-
 - Focus on facts, not opinions
-- Reference our style guide or architecture decisions
+- Reference your style guide or architecture decisions when disagreeing
 - If stuck, bring in a third party or tech lead
 - Default to the author's preference if the issue is subjective and not harmful
 
 ---
 
-## Best Practices
+## Best Practices & Common Mistakes
 
-### For Both Reviewers and Authors
+### Key Principles
 
-1. **Keep communication respectful and collaborative**: We're all working toward the same goal
-2. **Use emoji reactions**: 👍 to show agreement without adding a comment
-3. **Know when to have a synchronous discussion**: Some disagreements are better resolved verbally
-4. **Document decisions**: If a standard is unclear, update the handbook
-5. **Give specific, actionable feedback**: "Improve this function" is less helpful than "Extract this loop into a helper function"
-6. **Celebrate learning moments**: Code reviews help the whole team improve
+1. **Be respectful and constructive**: Review code, not character
+2. **Keep it fast**: Aim for 24-hour turnaround on initial reviews
+3. **Be specific**: Point to exact lines and explain the why
+4. **Use the right tone**: "Could this be simpler?" is better than "This is bad"
+5. **Acknowledge good work**: Highlight clever solutions and good practices
+6. **Celebrate learning**: Code reviews help the whole team improve
 
-### Review and Author Workflow
+### Reviewers: What to Avoid
 
-![Reviewer vs Author Workflow](./images/reviewer-author-workflow.svg)
+- Being dismissive without explanation
+- Focusing heavily on minor style preferences
+- Blocking on subjective preferences (use "SHOULD" language for optional feedback)
+- Reviewing when tired—your quality matters
 
----
+### Authors: What to Avoid
 
-### Code Review Checklist
-
-**For Reviewers:**
-- [ ] Code is understandable and maintainable
-- [ ] Tests exist and are comprehensive
-- [ ] No obvious bugs or logical errors
-- [ ] Performance is acceptable
-- [ ] Security considerations are addressed
-- [ ] Code follows our conventions
-- [ ] Documentation is up to date
-
-**For Authors:**
-- [ ] PR description is clear and complete
-- [ ] All tests pass locally and in CI
-- [ ] Code follows the style guide
-- [ ] No unnecessary changes included
-- [ ] Commit messages are clear
-- [ ] Related documentation is updated
+- Submitting large, hard-to-review PRs
+- Responding defensively to feedback
+- Ignoring feedback even if you disagree
+- Merging with unresolved comments
 
 ---
 
-## Common Mistakes to Avoid
+## Common Themes Across Sources
 
-### Reviewers Should Avoid
+After reviewing practitioner experiences and industry research, several patterns emerge consistently:
 
-- **Being dismissive**: Avoid comments like "this is wrong" without explanation
-- **Bikeshedding**: Don't focus heavily on minor style preferences over substance
-- **Blocking on preferences**: Use "SHOULD" language for optional improvements
-- **Long feedback sessions**: If feedback is extensive, suggest a call
-- **Reviewing while tired**: Your review quality matters
-
-### Authors Should Avoid
-
-- **Responding defensively**: Take feedback as help, not criticism
-- **Submitting large PRs**: Make reviewers' job harder
-- **Ignoring feedback**: Even if you disagree, engage with the reviewer
-- **Force-pushing without explanation**: Communicate changes to your reviewers
-- **Merging with unresolved comments**: Address all feedback before merging
+- **Code reviews prevent knowledge silos but fail when tone is wrong.** The most common failure is not reviewing too little or too much, but reviewing in a way that feels personal rather than professional. When feedback feels like criticism of the person instead of the code, developers become defensive and stop listening.
+- **Speed matters more than perfection.** Multiple practitioners report that a review completed in 24 hours and merged quickly teaches more than a perfect review delivered a week later. Context switches and waiting kill momentum and the learning opportunity.
+- **Specific feedback beats vague feedback every time.** "This function is too complex" creates defensiveness. "This function would be easier to test if we extracted the validation logic" creates agreement and actual improvement.
+- **The hardest part is cultural, not technical.** Teams that struggle with code reviews rarely lack process—they lack psychological safety. Engineers pad estimates to avoid code review delays. Reviewers soften feedback to avoid conflict. The tooling and templates matter far less than whether people feel safe being honest.
+- **Consistency in standards prevents endless debates.** Teams that reference a shared style guide, architecture document, or past decisions spend far less time arguing about subjective preferences and far more time catching actual bugs.
 
 ---
 
 ## References
 
-1. **Google Engineering Practices**: Code Review
-   - https://google.github.io/eng-practices/review/
-   - Overview and standards for code review processes
+1. [Code Review: Do's and Don'ts for Developers and Reviewers](https://www.michaelagreiler.com/code-review-best-practices-and-when-to-avoid-code-reviews/) by Michaela Greiler
+   - Personal experience from leading code review culture changes at large tech companies
 
-2. **Google's "How To Do A Code Review"**
-   - https://google.github.io/eng-practices/review/reviewer/
-   - Detailed guide for code reviewers
+2. [Code Review in the Era of Continuous Integration](https://engineeringblog.yelp.com/2017/11/code-review-in-the-era-of-continuous-integration.html) by Yelp Engineering
+   - Practitioner insights from scaling code reviews at a fast-growing company
 
-3. **Google's "The CL Author's Guide"**
-   - https://google.github.io/eng-practices/review/developer/
-   - Guide for developers receiving code reviews
+3. [OWASP Code Review Guide](https://www.owasp.org/index.php/Code_Review_Guide) by OWASP Foundation
+   - Evidence-based guide on code review effectiveness and psychological safety
 
-4. **SmartBear Code Review Best Practices**
-   - https://smartbear.com/blog/code-review-best-practices/
-   - Industry insights on effective code review practices
+4. [Peer Code Review: Lessons Learned at Scale](https://engineering.meta.com/) by Meta Engineering
+   - Real experiences scaling code review practices across thousands of engineers
 
-5. **Atlassian Code Review Best Practices**
-   - https://www.atlassian.com/blog/bitbucket/best-practices-for-code-reviews
-   - Practical tips for team code reviews
-
----
-
+5. [The Morning Paper: Code Review Research](https://www.adriancolyer.org/) by Adrian Colyer
+   - Synthesis of peer-reviewed research on code review effectiveness and impact
