@@ -100,7 +100,7 @@ _To be filled in_
 > I was too optimistic when setting the deadlines in the project plan. I assumed the team would be able to work to the schedule I proposed, but in practice it was very hard to stick to. Most of the work came together in the final days. Next time I would set more realistic timelines and build in buffer, rather than planning for an ideal scenario where everyone delivers on time. That said, the PR review process worked well. Feedback was taken on board and acted on, which meant the content improved noticeably between versions. Despite the tight timeline, the work came together in the end.
 
 **Diana:**
-> _To be filled in_
+> Great work from everyone on the team. Alba did an excellent job taking on the project manager role and keeping everything well-organized. Antoine and I worked beyond the initially planned timeline, but we still managed to deliver everything on time. The collaboration was smooth, and the feedback process really helped improve the quality of our work. Great team effort!
 
 **Antoine:**
 
