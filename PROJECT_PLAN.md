@@ -68,7 +68,6 @@
 
 | Task | Owner | Branch |
 |------|-------|--------|
-| Standardise formatting across all sections | Antoine | `polish` |
 | Write Retrospective + contributions table | All | `retrospective` |
 
 ---
@@ -78,30 +77,31 @@
 
 | Team Member | Contribution | Verified by |
 |------------|--------------|-----
-| Alba | | Antoine, Diana |
-| Diana | | Alba, Antoine |
-| Antoine | | Alba, Diana |
+| Alba | - Created the project plan and assigned tasks to the team <br> - Wrote the README <br> - Created GitHub issues <br> - Researched and wrote the Task Estimation section <br> - Co-authored the CI/CD section | Antoine, Diana |
+| Diana | - Researched and wrote Code Reviews section <br> - Co-authored the Task Estimation section | Alba, Antoine |
+| Antoine | - Created the GitHub repository and invited collaborators <br> - Researched and wrote the CI/CD section <br> - Co-authored the Code Reviews section | Alba, Diana |
 
 ---
 
 ## Retrospective
 
 ### What went well?
-_To be filled in_
+Team collaboration worked well throughout the project, the tasks were distributed, GitHub was used well, and the PR feedback process improved the quality of each section before final submission.
 
 ### What was challenging?
-_To be filled in_
+The main challenge was timeline management and source selection. Some work moved later than planned which concentrated effort in the final days, and finding high-quality sources for each topic took more time than expected.
 
 ### What would we do differently next time?
-_To be filled in_
+Next time we would set more realistic deadlines with built-in buffer. Start writing and review cycles earlier, and agree on source quality criteria at the start to reduce late rework.
 
 ### Individual reflections
 
 **Alba:**
-> _To be filled in_
+> I was too optimistic when setting the deadlines in the project plan. I assumed the team would be able to work to the schedule I proposed, but in practice it was very hard to stick to. Most of the work came together in the final days. Next time I would set more realistic timelines and build in buffer, rather than planning for an ideal scenario where everyone delivers on time. That said, the PR review process worked well. Feedback was taken on board and acted on, which meant the content improved noticeably between versions. Despite the tight timeline, the work came together in the end.
 
 **Diana:**
-> _To be filled in_
+> Great work from everyone on the team. Alba did an excellent job taking on the project manager role and keeping everything well-organized. Antoine and I worked beyond the initially planned timeline, but we still managed to deliver everything on time. The collaboration was smooth, and the feedback process really helped improve the quality of our work. Great team effort!
 
 **Antoine:**
-> _To be filled in_
+
+> The project went well, we encounter no difficulties at all when it comes to use github to organize our group project. The challenging part was most likely to select the best sources on internet to answer each topics. Next time I would take the time to write the best pratices for the ci/cd sooner.
