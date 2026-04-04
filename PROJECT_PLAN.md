@@ -77,7 +77,7 @@
 
 | Team Member | Contribution | Verified by |
 |------------|--------------|-----
-| Alba | | Antoine, Diana |
+| Alba | - Created the project plan and assigned tasks to the team <br> - Wrote the README <br> - Created GitHub issues <br> - Researched and wrote the Task Estimation section <br> - Co-authored the CI/CD section | Antoine, Diana |
 | Diana | | Alba, Antoine |
 | Antoine | | Alba, Diana |
 
